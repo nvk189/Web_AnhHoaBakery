@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anh Hoa bán bánh</title>
+    <link rel="stylesheet" href="./assets/Bakery.css">
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/reponsive.css">
+    <link rel="stylesheet" href="./Bakery_items1.html">
+    <link rel="stylesheet" href="./assets/JS/Home_bakery.js">
+</head>
+<body style="position: relative;">
+    <div class="link">
+        <div class="phone">
+            <i  id="a" class="fa fa-phone " aria-hidden="true"></i>
+        </div>
+        <div class="Mess">
+            <svg  style="margin: 13px -10px 0 15px;"width="36" height="36" viewBox="0 0 36 36"><path fill="white" d="M1 17.99C1 8.51488 8.42339 1.5 18 1.5C27.5766 1.5 35 8.51488 35 17.99C35 27.4651 27.5766 34.48 18 34.48C16.2799 34.48 14.6296 34.2528 13.079 33.8264C12.7776 33.7435 12.4571 33.767 12.171 33.8933L8.79679 35.3828C7.91415 35.7724 6.91779 35.1446 6.88821 34.1803L6.79564 31.156C6.78425 30.7836 6.61663 30.4352 6.33893 30.1868C3.03116 27.2287 1 22.9461 1 17.99ZM12.7854 14.8897L7.79161 22.8124C7.31238 23.5727 8.24695 24.4295 8.96291 23.8862L14.327 19.8152C14.6899 19.5398 15.1913 19.5384 15.5557 19.8116L19.5276 22.7905C20.7193 23.6845 22.4204 23.3706 23.2148 22.1103L28.2085 14.1875C28.6877 13.4272 27.7531 12.5704 27.0371 13.1137L21.673 17.1847C21.3102 17.4601 20.8088 17.4616 20.4444 17.1882L16.4726 14.2094C15.2807 13.3155 13.5797 13.6293 12.7854 14.8897Z"></path></svg>
+        </div>
+        <a href="#">
+            <div class="home">
+                <i  id="home-now"  class="fa fa-angle-up" aria-hidden="true"></i>
+            </div>
+        </a>
+        
+    </div>
+
+    <!-- phần thông tin  -->
+    <header class="home">
+        <div class="site-header box">
+            <div class="wrapper box">
+                <div class="inner box">
+                    <div class="inner-top">
+                        <div class="items-logo">
+                            <a href="./Home_Bakery.html">
+                                <img style="width: 95px; height: 105.08px;" src="./assets/img/logo.webp" alt="ANH HOA BAKERY - Bánh ngọt Pháp">
+                            </a>
+                        </div>
+                        <div class="items-search">
+                            <form action="/search" method="get" class=" header-search" role="search">
+                                <input type="hidden" name="type" value="product">
+                                <input type="text" name="q" value="" placeholder="Tìm kiếm..." class="input-group-field" aria-label="Tìm kiếm...">
+                                <div class="input-group-btn">
+                                    <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                              </form>
+                        </div>
+                        <div class="items-click">
+                            <div class="click-icon">
+                                <a href="tel:0961 452 578">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>0961 452 578</span>
+                                </a>
+                                <a href="https://anhhoabakery.vn/pages/he-thong-cua-hang">
+                                    <i class="fa fa-building" aria-hidden="true"></i>
+                                    <span>Hệ thống <b>15</b> cửa hàng</span>  
+                                </a>
+                                <a href="./Bakery_TaiKhoan.html"><i class="fa fa-user" aria-hidden="true"></i> <span>Tài khoản</span></a>
+                                <a href="./Bakery_GioHang.html">
+                                    <div class="cart-total-price">
+                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                        <span id="CartCount">0</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-bottom">
+                        <div id="bottom-menu">
+                            <div class="menu">
+                                <ul class="list-menu">
+                                    <li class="active ">
+                                        <a href="/">Trang chủ </a>
+                                        
+                                    </li>
+
+                                    <li class=" dropdown">
+                                        <a href="/collections/gateaux-kem-tuoi">Bánh Sinh Nhật <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="drop-down-cake">
+                                          <li>
+                                            <a href="/collections/gateaux-kem-tuoi">Gateaux Kem Tươi </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/gateaux-kem-bo">Gateaux Kem Bơ </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-mousse-1">Bánh Mousse </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/gateaux-mousse">Gateaux Mousse </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/bo-suu-tap-banh-phu-kien">Bộ Sưu Tập Bánh Phụ Kiện. </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-valentine-trai-tim">Bánh Valentine - Trái Tim </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-sinh-nhat-be-trai-1">Bánh Sinh Nhật Bé Trai </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-sinh-nhat-be-gai">Bánh Sinh Nhật Bé Gái </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-in-anh">Bánh In Ảnh </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-ve-1">Bánh Vẽ </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-su-kien-1">Bánh Sự Kiện </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-su-kien-theo-yeu-cau">BÁNH SỰ KIỆN THEO YÊU CẦU </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-so">BÁNH SỐ </a>
+                                          </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class=" dropdown">
+                                        <a href="/collections/banh-my-banh-man">Bánh mỳ &amp; Bánh mặn <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="drop-down-cake">
+                                            <li  >
+                                                <a href="/collections/banh-my-1">Bánh Mỳ </a>
+                                            </li>
+                                            <li>
+                                                <a href="/collections/banh-man">Bánh Mặn </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class=" dropdown">
+                                        <a href="/collections/teabreak-va-minicake">Cookies &amp; Minicake <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="drop-down-cake">
+                                            <li>
+                                                <a href="/collections/cookies">Cookies </a>
+                                            </li>
+                                            <li>
+                                                <a href="/collections/mini-cake">Mini Cake </a>
+                                            </li>
+                                            <li>
+                                                <a href="/collections/teabreak">Teabreak </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class=" dropdown">
+                                        <a href="/blogs/news">Tin tức </a>
+                                    </li>
+
+                                    <li class=" dropdown">
+                                        <a href="/blogs/khuyen-mai">Khuyến mại </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </header>
+     <!-- slider quảng cáo  -->
+     <section>
+        <div class="silde">
+            <a href="https://anhhoabakery.vn/collections/gateaux-kem-tuoi">
+                <img src="//theme.hstatic.net/1000313040/1000406925/14/ms_banner_img2.jpg?v=1952" class="silde-img">
+            </a>
+            <a href="https://anhhoabakery.vn/collections/teabreak-va-minicake">
+                <img src="//theme.hstatic.net/1000313040/1000406925/14/ms_banner_img3.jpg?v=1952" class="silde-img">
+            </a>
+            <a href="https://anhhoabakery.vn/collections/banh-my-banh-man">
+                <img src="//theme.hstatic.net/1000313040/1000406925/14/ms_banner_img4.jpg?v=1952" class="silde-img">
+            </a>
+            <a href="https://anhhoabakery.vn/pages/he-thong-cua-hang">
+                <img src="//theme.hstatic.net/1000313040/1000406925/14/ms_banner_img5.jpg?v=1952" class="silde-img">
+            </a>
+            <div class="btn-left" onclick="showL()"><</div>
+            <div class="btn-right" onclick="showR()">></div>
+        </div>
+    </section>
+    <!-- Phần content -->
+    <main id="main-content">
+        <div class="home-products">
+            <!-- bánh sinh nhật -->
+            <div class="home-products-1">
+                <div class="content-items">
+                    <div class="content">
+                        <div class=" text-content">
+                            <h2>Bánh Sinh Nhật 2023</h2>
+                            <img src="//theme.hstatic.net/1000313040/1000406925/14/home_line_collection1.png?v=1952" alt="">
+                        </div>
+
+                        <div class="items-content">
+                          <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/53_c2a32321b1c4417d89a727f048d06659_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                         <!-- 600,000₫ -->
+                                         600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="GREEN TEA CAKE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/frame_fb_10_0594e351a70849d3a707f2ad2139dbfd_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL CHOCOLATE CAKE MOUSSE
+		
+                                    </a>
+                                    <p>
+                                        BSN012
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        <!-- 360,000₫ -->
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                          
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="GREEN TEA CAKE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/product_website_19_e9c104479fa343f7829e7ddb39417921_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                            
+			                            CARAMEL MOIST CHOCOLATE CAKE
+		
+                                    </a>
+                                    <p>
+                                        BSN011
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        <!-- 360,000₫ -->
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="GREEN TEA CAKE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/product_website_19_e9c104479fa343f7829e7ddb39417921_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        <!-- 600,000₫ -->
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="HAWAII MOUSSE" src="https://product.hstatic.net/1000313040/product/5_13bcdbfc09304024ba0e14acf5db18e1_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="OPERA CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/49_aafe4555a0da481a9692682c006d3de1_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="PASSION FRUIT MOUSSE" src="https://product.hstatic.net/1000313040/product/product_website_30_805c4673c8eb44e7a93d6bc1abf0bb67_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="PASSION FRUIT MOUSSE" src="https://product.hstatic.net/1000313040/product/product_website_30_805c4673c8eb44e7a93d6bc1abf0bb67_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/22_2106d23eac324a0f8223f62090918d18_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="Petit" src="//product.hstatic.net/1000313040/product/post_fb_19_061e31d72ca9467b9ff48f8d990e78eb_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="Petit" src="//product.hstatic.net/1000313040/product/post_fb_18_f0b126dff0934c44bcd3ac63b17a4cc0_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="Petit" src="//product.hstatic.net/1000313040/product/post_fb_17_127d14932b73462a9a29c3c53d9540e6_large.png">                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="Petit" src="//product.hstatic.net/1000313040/product/post_fb_15_3d7657976c064cde9a5b8f65525209a2_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="Petit" src="//product.hstatic.net/1000313040/product/post_fb_14_5b2a24d0898d45dc8f381c22d1f7b7f3_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/1__1__72ac901740aa4ae79581213a5dd3a8f9_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/frame_fb_12_782aca394a634f6da114cbc484985496_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/post_fb_16_2dbc4eb6b3844694ba0c2ded183e6a02_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/post_fb_12_acd18c66c2884616a8bdc28c84633da5_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/post_fb_15_3d7657976c064cde9a5b8f65525209a2_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/post_fb_13_156976b0270243e9af53d7e641ea7673_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/post_fb_11_8af009697ff64e1bb0bf69b576614fce_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/post_fb_10_7ba51029276641c0a67b014388d679f6_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="form-img">
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/post_fb_8_b52cb10e075c4657854b4fc87068a0ec_large.png">
+                                    </a>
+                                </div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- button xem thêm -->
+                            <div class="btn-viewmore-tab ">
+                                <a class="btn-remore" href="./Bakery_items1.html">Xem thêm</a>
+                            </div>
+                          
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sản phẩm bán chạy -->
+            <div class="home-products-1">
+                <div class="content-items">
+                    <div class="content">
+                        <div class=" text-content">
+                            <h2>Gateaux Kem Tươi</h2>
+                            <img src="//theme.hstatic.net/1000313040/1000406925/14/home_line_collection1.png?v=1952" alt="">
+                        </div>
+
+                        <div class="items-content">
+                          <div style="position: relative;" class="item ">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="./Bakery_items1.html">
+                                        <img alt="FRUIT CAKE" src="//product.hstatic.net/1000313040/product/53_c2a32321b1c4417d89a727f048d06659_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                         <!-- 600,000₫ -->
+                                         600,000&#8363;
+                                         
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img alt="GREENTEA CAKE 3" src="//product.hstatic.net/1000313040/product/1__1__72ac901740aa4ae79581213a5dd3a8f9_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                         <!-- 600,000₫ -->
+                                         600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item item-test">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        <img class="items-sale-hot" alt="FRESH CREAM CAKE 2" src="//product.hstatic.net/1000313040/product/57411787_203788503934527_7267489194916708352_o_203788497267861_7318285a88964ec9b8a9257742ad6f5c_large.jpg">
+                                        <!-- <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png"> -->
+                                    </a>
+                                   
+                                </div>
+                                <div class="sale-hot">Bán chạy</div>
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/52_890883bb26d3406984410cecd8c38aca_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item item-test">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/2__1__5eb9e5788828456d8f78df94dc11febd_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/product_website_9_e027ea6dd40e4f11bd452d52039b58e2_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item item-test">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/8_0dae6e9bf20445d581dd28f91f84eb71_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/4__1__5321ee669060474c94d925a72ea8dc63_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/43_68a0b10806dc4ad0885cb9d213ec18da_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/6_c087ecc2b13e46fbb7396fd5e355a513_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/3_3da067aee8c740319165993d99ceee43_large.jpg">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/50_b6ab17d9681749cdb81f7a564b8922c8_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="position: relative;" class="item item-test">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="https://product.hstatic.net/1000313040/product/25_ed8d6ef7bdd84105a3864ada1a077091_large.jpg">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div style="position: relative;" class="item">
+                                <div class="sale-hot">Bán chạy</div>
+                                <div  class="form-img ">
+                                    
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                    <img class="items-sale-hot" alt="CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT" src="//product.hstatic.net/1000313040/product/frame_fb_1_eb90f446482e4fecbf3a734f9e77cd8e_large.png">
+                                    </a>
+                                   
+                                </div>
+                                <!-- <div class="sale-hot">Bán chạy</div> -->
+                                <div class="form-text">
+                                
+                                    <a href="/products/caramel-and-chocolate-cake-mousse-chu-nhat-1">
+                                        CARAMEL AND CHOCOLATE CAKE MOUSSE CHỮ NHẬT
+                                    </a>
+                                    <p>
+                                        BSN07
+                                    </p>
+                               
+                                </div>
+                                <div class="form-actions">
+                                    <div class="product-price">
+                                        600,000&#8363;
+                                    </div>
+                                    <div class="product-actions">
+                                        
+                                        <button type="button" class="btn add-to-cart " data-id="1083632886"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                          
+                              
+                            <div class="btn-viewmore-tab ">
+                                <a class="btn-remore" href="./Bakery_items1.html">Xem thêm</a>
+                            </div>
+                        </div>
+                       
+                      
+                    </div>
+                </div>
+            </div>
+            <!-- liên hệ đặt hàng -->
+            <div class="home-order">
+                <div class="order">
+                    <div class="item-order">
+                        <div class="item-order-content">
+                            <div class="order-content-left">
+                                <div class="face-content-left">
+                                    <div class="content-left">
+                                        <div class="order-content-top">
+                                            <h1 class="solgan-order-1">ĐẶT ONLINE NGAY!</h1>
+                                            <h3 class="solgan-order-2">KHÔNG CÒN PHẢI CHỜ ĐỢI NỮA</h3>
+                                         </div>
+    
+                                         <!--đặt hàng online  -->
+                                         <div class="order-content-bottom">
+                                            <form accept-charset="UTF-8" action="/contact" class="contact-form" method="post">
+                                                <input name="form_type" type="hidden" value="contact">
+                                                <input name="utf8" type="hidden" value="✓">
+                                        
+                                                                      
+                                                    <ul class="list-content-order">
+                                                        <!-- <li>
+                                                            <input type="text" required="" id="ContactFormName" class="input-full" name="contact[name]" placeholder="Họ tên của bạn" value="">
+                                                        </li> -->
+                                                        <li> 
+                                                            <label for="ContactFormName">Họ tên của bạn</label>
+                                                            <input type="text" required="" id="ContactFormName" class="input-full" name="contact[name]" placeholder="Họ tên của bạn" value="">
+                                                        </li>
+                                                        <li>
+                                                            <label for="ContactFormEmail">Địa chỉ email của bạn</label>
+                                                            <input type="email" required="" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="Địa chỉ email của bạn" value="">
+                                                        </li>
+                                                        <li>
+                                                            <label for="ContactFormPhone">Số điện thoại của bạn</label>
+                                                            <input type="tel" required="" id="ContactFormPhone" class="input-full" name="contact[phone]" placeholder="Số điện thoại của bạn" pattern="[0-9\-]*" value="">
+                                                        </li>
+                                                        <li>
+                                                            <label for="ContactFormMessage">Nội dung</label>
+                                                            <textarea rows="5" required="" id="ContactFormMessage" class="input-full" name="contact[body]" placeholder="Nội dung"></textarea>
+                                                        </li>
+                                                        <li>
+                                                            <div class="text-center">
+                                                                <button type="submit" class="btnType1" value="Gửi">Đặt ngay</button>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                            </form>  
+                                        </div>   
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                               
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- tin tức -->
+            <div class="home-news">
+                <div class="home-products-1">
+                    <div class="content-items">
+                        <div class="content">
+                            <div class=" text-content">
+                                <h2>Tin tức </h2>
+                                <h3>Nổi bật trong tuần</h3>
+                                
+                        </div>
+                    </div>
+
+                    <div class="content-slider">
+                        
+
+                        <div class="item-1 " style="width: 383px; height: 500px; background-color: #fff;position: relative;">
+
+                            <div class="item-img">
+                                <a href="/blogs/news/happy-valentine-s-day-2023">
+                                    <img src="//file.hstatic.net/1000313040/article/key_valentine_4_0d2816d17a544d368bfa7c30957b0584_large.png" alt="HAPPY VALENTINE'S DAY 2023">
+                                </a>
+                            </div>
+                            <div class="Date-time text-center ">
+                                <p>10</p>
+                                <span>02/2022</span>
+                            </div>
+                            <div class="item-content">
+                                <div class="solgan text-center">
+                                    <a href="/blogs/news/happy-valentine-s-day-2023" alt="">HAPPY VALENTINE'S DAY 2023</a>
+                                </div>
+                                <div class="icon text-center">
+                                    <span><i class="fa fa-commenting-o" aria-hidden="true"></i> 0 bình luận</span>
+                                    <span> <i class="fa fa-user" aria-hidden="true"> </i> Hoa Lê </span>
+                                  
+                                </div>
+                                <div class="comment text-center">
+                                   <p>Nhắc đến tình yêu - là nhắc đến những trái tim ngập tràn màu hồng, ngọt ngào và hạnh phúc.Bạn biết không, người ta vẫn tin rằng trái tim là trung tâm của mọi cảm xúc...</p> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-1 " style="width: 383px; height: 500px; background-color: #fff;position: relative;">
+
+                            <div class="item-img">
+                                <a href="/blogs/news/happy-valentine-s-day-2023">
+                                    <img src="//file.hstatic.net/1000313040/article/key_valentine_4_0d2816d17a544d368bfa7c30957b0584_large.png" alt="HAPPY VALENTINE'S DAY 2023">
+                                </a>
+                            </div>
+                            <div class="Date-time text-center ">
+                                <p>10</p>
+                                <span>02/2022</span>
+                            </div>
+                            <div class="item-content">
+                                <div class="solgan text-center">
+                                    <a href="/blogs/news/happy-valentine-s-day-2023" alt="">HAPPY VALENTINE'S DAY 2023</a>
+                                </div>
+                                <div class="icon text-center">
+                                    <span><i class="fa fa-commenting-o" aria-hidden="true"></i> 0 bình luận</span>
+                                    <span> <i class="fa fa-user" aria-hidden="true"> </i> Hoa Lê </span>
+                                  
+                                </div>
+                                <div class="comment text-center">
+                                    Nhắc đến tình yêu - là nhắc đến những trái tim ngập tràn màu hồng, ngọt ngào và hạnh phúc.Bạn biết không, người ta vẫn tin rằng trái tim là trung tâm của mọi cảm xúc...
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item-1 " style="width: 383px; height: 500px; background-color: #fff;position: relative;">
+
+                            <div class="item-img">
+                                <a href="/blogs/news/happy-valentine-s-day-2023">
+                                    <img src="//file.hstatic.net/1000313040/article/key_valentine_4_0d2816d17a544d368bfa7c30957b0584_large.png" alt="HAPPY VALENTINE'S DAY 2023">
+                                </a>
+                            </div>
+                            <div class="Date-time text-center ">
+                                <p>10</p>
+                                <span>02/2022</span>
+                            </div>
+                            <div class="item-content">
+                                <div class="solgan text-center">
+                                    <a href="/blogs/news/happy-valentine-s-day-2023" alt="">HAPPY VALENTINE'S DAY 2023</a>
+                                </div>
+                                <div class="icon text-center">
+                                    <span><i class="fa fa-commenting-o" aria-hidden="true"></i> 0 bình luận</span>
+                                    <span> <i class="fa fa-user" aria-hidden="true"> </i> Hoa Lê </span>
+                                  
+                                </div>
+                                <div class="comment text-center">
+                                    Nhắc đến tình yêu - là nhắc đến những trái tim ngập tràn màu hồng, ngọt ngào và hạnh phúc.Bạn biết không, người ta vẫn tin rằng trái tim là trung tâm của mọi cảm xúc...
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- Thông tin cửa hàng -->
+            <div class="marketing">
+                <div class="home-products-1">
+                    <div class="content-items">
+                        <div class="content">
+                            <div class=" text-content">
+                                <h2>Về Chúng tôi </h2>
+                                <h3>chào mừng bạn đến Anhhoa Bakery</h3>
+                                
+                            </div>
+
+                            <div class="marketing-content">
+                                <div class="marketing-img">
+                                    <div class="img-1">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="img-2">
+                                        <img src="./assets/img/intro.png" alt="Ảnh bếp bakery">
+                                    </div>
+                                </div>
+
+                                <div class="marketing-text">
+                                    <p>
+                                        Anh Hòa Bakery là thương hiệu bánh ngọt Pháp của công ty cổ phần bánh ngọt Anh Hòa. Được thành lập từ năm 2004 tại con phố Ngõ Trạm, quận Hoàn Kiếm, Hà Nội. Trải qua hơn 15 năm phát triển, đến nay Anh Hòa Bakery đã có 13 cơ sở kinh doanh đặt trên những tuyến phố đông dân cư ở Hà Nội. Các sản phẩm Anh Hòa Bakery được làm từ các nguyên liệu nhập khẩu của các nước có truyền thống làm bánh như: Newzeland, Mỹ, Pháp, Bỉ. Với hương vị thơm ngon đặc trưng của các loại kem, bơ, sữa, phô mai, hạt hạnh nhân, chocolate... dưới bàn tay khéo léo của những người thợ làm bánh giàu kinh nghiệm. Quy mô xưởng sản xuất rộng hơn 2000m2 với các thiết bị tiên tiến hiện đại theo tiêu chuẩn ISO 2018, toàn bộ nhà máy được sơn phủ bởi sơn EPOXY đặc biệt. Anh Hòa Bakery luôn mang đến cho khách hàng những sản phẩm chất lượng nhất, đảm bảo tuyệt đối về an toàn vệ sinh thực phẩm.
+                                    </p>
+                                    <div class="btn-viewmore-tab ">
+                                        <a class="btn-remore" href="/collections/banh-sinh-nhat-2022">Đọc  thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <!-- footer -->
+     <footer></footer>
+        <div class="footer-top">
+           <div class="footer-list">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <div class="footer-1 fi">
+                       
+                            <div class="ft-contact-logo text-center">
+                                <a href="/"><img src="//theme.hstatic.net/1000313040/1000406925/14/logo_ft.png?v=1952" alt="ANH HOA BAKERY - Bánh ngọt Pháp"></a>
+                            </div>
+                            
+                            <div class="ft-contact-address">
+                                <i class="fa fa-home" aria-hidden="true"></i> Số 09 Trần Thái Tông, P. Dịch Vọng, Q. Cầu Giấy, TP. Hà Nội
+                            </div>
+                            <div class="ft-contact-tel">
+                                <i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:0961452578">0961452578</a>
+                            </div>
+                            <div class="ft-contact-email">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@anhhoabakery.vn">info@anhhoabakery.vn</a>
+                            </div>
+                      
+                    </div>
+                    <div class="footer-2 fi">
+                        
+                            <div class="ft-menu">
+                                <h4>Chính sách</h4>
+                                <ul class="no-bullets">
+                                    
+                                    
+                                    <li><a href="/pages/chinh-sach-va-quy-dinh-chung">Chính sách và quy định chung</a></li>
+                                    
+                                    <li><a href="/pages/chinh-sach-giao-dich-thanh-toan">Chính sách giao dịch, thanh toán</a></li>
+                                    
+                                    <li><a href="/pages/chinh-sach-doi-tra">Chính sách đổi trả</a></li>
+                                    
+                                    <li><a href="/pages/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                                    
+                                    <li><a href="/pages/chinh-sach-van-chuyen">Chính sách vận chuyển</a></li>
+                                    
+                                </ul>
+                            </div>
+                        
+                    </div>
+                    <div class="footer-3 fi">
+                        <div class="ft-subscribe-wrapper">
+                            <h4>Anh Hòa Bakery</h4>
+                            <div class="ft-subscribe">
+                                <p>Tên đơn vị: Công ty Cổ phần Bánh ngọt Anh Hòa Số giấy chứng nhận đăng ký kinh doanh: 0104802706 Ngày cấp: 21/07/2010 Nơi cấp: Sở Kế hoạch và Đầu tư Tp. Hà Nội
+    
+                                </p>
+                                
+                            <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post" name="myForm" onsubmit="validateForm()">
+                                <input name="form_type" type="hidden" value="customer">
+                                <input name="utf8" type="hidden" value="✓">
+                                <div class="input-group">
+                                    <input type="email" required="" value="" placeholder="Nhập email của bạn..." name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                                    <input type="hidden" name="contact[tags]" value="newsletter">
+                                    <span class="input-group-btn">												
+                                        <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                    </span>										
+                                </div>
+                                
+                                </form>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-4 fi">
+                        <h4>Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm tri ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây</h4>
+                        <div id="owl-home-main-banners-slider-ft" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                            <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 516px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);"><div class="owl-item" style="width: 258px;"><div class="item">
+                                <div class="ft-img">
+                                    <a href="//theme.hstatic.net/1000313040/1000406925/14/hg_img1.png?v=1952" data-fancybox="home-gallery-images" data-caption=""><img src="//theme.hstatic.net/1000313040/1000406925/14/hg_img_thumb1.png?v=1952" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                         
+                        <div class="owl-controls clickable" style="display: none;"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="footer-bottom">
+           
+            <div class="ft-copyright">
+              <p> Copyrights © 2018 by <a target="_blank" href="https://anhhoabakery.myharavan.com/">Anhhoa Bakery</a></p> 
+            </div>
+        
+        </div>
+    </footer> 
+   
+
+</body>
+<script>
+    var list = document.getElementsByClassName("silde-img");
+    var index = 0;
+    for (x of list) {
+        x.style.display = 'none';
+    }
+    list[index].style.display = 'block';
+    function showL() {
+        for (x of list) {
+            x.style.display = 'none';
+        }
+        if (index == 0) index = list.length - 1;
+        else index = index - 1;
+        list[index].style.display = 'block';
+        setTimeout(showL, 2000); 
+    }
+
+    function showR() {
+        for (x of list) {
+            x.style.display = 'none';
+        }
+        if (index == list.length - 1) index = 0;
+        else index = index + 1;
+        list[index].style.display = 'block';
+    }
+    setTimeout(showL, 2000); 
+
+</script>
+
+
+</html>

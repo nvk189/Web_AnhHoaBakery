@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/Bakery.css">
+    <link rel="stylesheet" href="./assets/Bakery_items1.css">
+    <link rel="stylesheet" href="./assets/Bakery_GioHang.css">
+</head>
+<body>
+    <div class="link">
+        <div class="phone">
+            <i  id="a" class="fa fa-phone " aria-hidden="true"></i>
+        </div>
+        <div class="Mess">
+            <svg  style="margin: 13px -10px 0 15px;"width="36" height="36" viewBox="0 0 36 36"><path fill="white" d="M1 17.99C1 8.51488 8.42339 1.5 18 1.5C27.5766 1.5 35 8.51488 35 17.99C35 27.4651 27.5766 34.48 18 34.48C16.2799 34.48 14.6296 34.2528 13.079 33.8264C12.7776 33.7435 12.4571 33.767 12.171 33.8933L8.79679 35.3828C7.91415 35.7724 6.91779 35.1446 6.88821 34.1803L6.79564 31.156C6.78425 30.7836 6.61663 30.4352 6.33893 30.1868C3.03116 27.2287 1 22.9461 1 17.99ZM12.7854 14.8897L7.79161 22.8124C7.31238 23.5727 8.24695 24.4295 8.96291 23.8862L14.327 19.8152C14.6899 19.5398 15.1913 19.5384 15.5557 19.8116L19.5276 22.7905C20.7193 23.6845 22.4204 23.3706 23.2148 22.1103L28.2085 14.1875C28.6877 13.4272 27.7531 12.5704 27.0371 13.1137L21.673 17.1847C21.3102 17.4601 20.8088 17.4616 20.4444 17.1882L16.4726 14.2094C15.2807 13.3155 13.5797 13.6293 12.7854 14.8897Z"></path></svg>
+        </div>
+        <a href="#">
+            <div class="home">
+                <i  id="home-now"  class="fa fa-angle-up" aria-hidden="true"></i>
+            </div>
+        </a>
+        
+    </div>
+    <header class="home">
+        <div class="site-header box">
+            <div class="wrapper box">
+                <div class="inner box">
+                    <div class="inner-top">
+                        <div class="items-logo">
+                            <a href="./Home_Bakery.html">
+                                <img style="width: 95px; height: 105.08px;" src="./assets/img/logo.webp" alt="ANH HOA BAKERY - Bánh ngọt Pháp">
+                            </a>
+                        </div>
+                        <div class="items-search">
+                            <form action="/search" method="get" class=" header-search" role="search">
+                                <input type="hidden" name="type" value="product">
+                                <input type="text" name="q" value="" placeholder="Tìm kiếm..." class="input-group-field" aria-label="Tìm kiếm...">
+                                <div class="input-group-btn">
+                                    <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                              </form>
+                        </div>
+                        <div class="items-click">
+                            <div class="click-icon">
+                                <a href="tel:0961 452 578">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>0961 452 578</span>
+                                </a>
+                                <a href="https://anhhoabakery.vn/pages/he-thong-cua-hang">
+                                    <i class="fa fa-building" aria-hidden="true"></i>
+                                    <span>Hệ thống <b>15</b> cửa hàng</span>  
+                                </a>
+                                <a href="./Bakery_TaiKhoan.html"><i class="fa fa-user" aria-hidden="true"></i> <span>Tài khoản</span></a>
+                                <a href="./Bakery_GioHang.html">
+                                    <div class="cart-total-price">
+                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                        <span id="CartCount">0</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-bottom">
+                        <div id="bottom-menu">
+                            <div class="menu">
+                                <ul class="list-menu">
+                                    <li class=" dropdown ">
+                                        <a href="/">Trang chủ </a>
+                                        
+                                    </li>
+
+                                    <li class=" dropdown">
+                                        <a href="/collections/gateaux-kem-tuoi">Bánh Sinh Nhật <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="drop-down-cake">
+                                          <li>
+                                            <a href="/collections/gateaux-kem-tuoi">Gateaux Kem Tươi </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/gateaux-kem-bo">Gateaux Kem Bơ </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-mousse-1">Bánh Mousse </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/gateaux-mousse">Gateaux Mousse </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/bo-suu-tap-banh-phu-kien">Bộ Sưu Tập Bánh Phụ Kiện. </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-valentine-trai-tim">Bánh Valentine - Trái Tim </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-sinh-nhat-be-trai-1">Bánh Sinh Nhật Bé Trai </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-sinh-nhat-be-gai">Bánh Sinh Nhật Bé Gái </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-in-anh">Bánh In Ảnh </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-ve-1">Bánh Vẽ </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-su-kien-1">Bánh Sự Kiện </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-su-kien-theo-yeu-cau">BÁNH SỰ KIỆN THEO YÊU CẦU </a>
+                                          </li>
+                                          <li>
+                                            <a href="/collections/banh-so">BÁNH SỐ </a>
+                                          </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class=" dropdown">
+                                        <a href="/collections/banh-my-banh-man">Bánh mỳ &amp; Bánh mặn <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="drop-down-cake">
+                                            <li  >
+                                                <a href="/collections/banh-my-1">Bánh Mỳ </a>
+                                            </li>
+                                            <li>
+                                                <a href="/collections/banh-man">Bánh Mặn </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class=" dropdown">
+                                        <a href="/collections/teabreak-va-minicake">Cookies &amp; Minicake <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="drop-down-cake">
+                                            <li>
+                                                <a href="/collections/cookies">Cookies </a>
+                                            </li>
+                                            <li>
+                                                <a href="/collections/mini-cake">Mini Cake </a>
+                                            </li>
+                                            <li>
+                                                <a href="/collections/teabreak">Teabreak </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class=" dropdown">
+                                        <a href="/blogs/news">Tin tức </a>
+                                    </li>
+
+                                    <li class=" dropdown">
+                                        <a href="/blogs/khuyen-mai">Khuyến mại </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </header>
+    <main>
+        <div class="main-img">
+            <div class="main-content">
+                <div class="content">
+                        <h2>
+                            GIỎ HÀNG CỦA BẠN - ANH HÒA BAKERY
+                        </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="thongbao">
+            <!-- <div class="content">
+                <p>Giỏ hàng </p>
+                <p>Giỏ hàng trống </p>
+                <p>Tiếp tục hàng tại đây</p>
+            </div> -->
+            <div class="content-gh">
+                <div class="content-1">
+                    <h2>Giỏ hàng </h2>
+                    <h3>Giỏ hàng trống </h3>
+                    <h3>Tiếp tục hàng tại đây</h3>
+                </div>
+               
+            </div>
+               
+            
+        </div>
+     
+           
+
+                           
+                
+    </main>
+
+
+    <footer>
+
+        <div class="footer-top">
+           <div class="footer-list">
+             <div class="footer-content">
+                <div class="footer-item">
+                    <div class="footer-1 fi">
+                       
+                            <div class="ft-contact-logo text-center">
+                                <a href="/"><img src="//theme.hstatic.net/1000313040/1000406925/14/logo_ft.png?v=1952" alt="ANH HOA BAKERY - Bánh ngọt Pháp"></a>
+                            </div>
+                            
+                            <div class="ft-contact-address">
+                                <i class="fa fa-home" aria-hidden="true"></i> Số 09 Trần Thái Tông, P. Dịch Vọng, Q. Cầu Giấy, TP. Hà Nội
+                            </div>
+                            <div class="ft-contact-tel">
+                                <i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:0961452578">0961452578</a>
+                            </div>
+                            <div class="ft-contact-email">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@anhhoabakery.vn">info@anhhoabakery.vn</a>
+                            </div>
+                      
+                    </div>
+                    <div class="footer-2 fi">
+                        
+                            <div class="ft-menu">
+                                <h4>Chính sách</h4>
+                                <ul class="no-bullets">
+                                    
+                                    
+                                    <li><a href="/pages/chinh-sach-va-quy-dinh-chung">Chính sách và quy định chung</a></li>
+                                    
+                                    <li><a href="/pages/chinh-sach-giao-dich-thanh-toan">Chính sách giao dịch, thanh toán</a></li>
+                                    
+                                    <li><a href="/pages/chinh-sach-doi-tra">Chính sách đổi trả</a></li>
+                                    
+                                    <li><a href="/pages/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                                    
+                                    <li><a href="/pages/chinh-sach-van-chuyen">Chính sách vận chuyển</a></li>
+                                    
+                                </ul>
+                            </div>
+                        
+                    </div>
+                    <div class="footer-3 fi">
+                        <div class="ft-subscribe-wrapper">
+                            <h4>Anh Hòa Bakery</h4>
+                            <div class="ft-subscribe">
+                                <p>Tên đơn vị: Công ty Cổ phần Bánh ngọt Anh Hòa Số giấy chứng nhận đăng ký kinh doanh: 0104802706 Ngày cấp: 21/07/2010 Nơi cấp: Sở Kế hoạch và Đầu tư Tp. Hà Nội
+    
+                                </p>
+                                
+                            <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post" name="myForm" onsubmit="validateForm()">
+                                <input name="form_type" type="hidden" value="customer">
+                                <input name="utf8" type="hidden" value="✓">
+                                <div class="input-group">
+                                    <input type="email" required="" value="" placeholder="Nhập email của bạn..." name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                                    <input type="hidden" name="contact[tags]" value="newsletter">
+                                    <span class="input-group-btn">												
+                                        <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                    </span>										
+                                </div>
+                                
+                                </form>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-4 fi">
+                        <h4>Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm tri ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây</h4>
+                        <div id="owl-home-main-banners-slider-ft" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                            <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 516px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);"><div class="owl-item" style="width: 258px;"><div class="item">
+                                <div class="ft-img">
+                                    <a href="//theme.hstatic.net/1000313040/1000406925/14/hg_img1.png?v=1952" data-fancybox="home-gallery-images" data-caption=""><img src="//theme.hstatic.net/1000313040/1000406925/14/hg_img_thumb1.png?v=1952" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                            
+                            <div class="owl-controls clickable" style="display: none;"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           
+            <div class="ft-copyright">
+              <p> Copyrights © 2018 by <a target="_blank" href="https://anhhoabakery.myharavan.com/">Anhhoa Bakery</a></p> 
+            </div>
+        
+        </div>
+    </footer>
+</body>
+</html>
