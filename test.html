@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm giảm giá</title>
+</head>
+<body>
+    <div class="product">
+        <h2>Sản phẩm XYZ</h2>
+        <p>Giá gốc: $100</p>
+    </div>
+
+    <button onclick="addDiscountLabel()">Thêm nhãn giảm giá</button>
+
+    <script>
+        function addDiscountLabel() {
+            // Lấy phần tử sản phẩm
+            const product = document.querySelector('.product');
+
+            // Tạo một phần tử span để hiển thị nhãn giảm giá
+            const discountLabel = document.createElement('span');
+            discountLabel.textContent = 'Giảm giá 10%';
+
+            // Thêm lớp CSS cho nhãn giảm giá để tùy chỉnh ngoại hình
+            discountLabel.classList.add('discount-label');
+
+            // Thêm nhãn giảm giá vào sản phẩm
+            product.appendChild(discountLabel);
+        }
+    </script>
+
+    <style>
+        .discount-label {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>
